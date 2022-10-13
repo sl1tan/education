@@ -95,8 +95,70 @@ def l():
         return
 
 def m():
-    inp = int(input(0))
+    inp = int(input())
     if inp == 0:
-        return
+        return 0
+    else:
+        return max(inp, m())
 
-m()
+def n(sum = 0, count = 0):
+    inp = int(input())
+    sum += inp
+    if inp == 0:
+        return sum / count
+    else:
+        return n(sum, count + 1)
+
+def o(max1 = 0, max2 = 0):
+    inp = int(input())
+    if inp == 0:
+        print(max2)
+    elif max1 < inp:
+        o(inp, max1)
+    elif max2 < inp:
+        o(max1, inp)
+    else:
+        o(max1, max2)
+
+def p(max = 0, count = 1):
+    inp = int(input())
+    if inp == 0:
+        print(count)
+    elif inp > max:
+        p(inp, 1)
+    elif inp == max:
+        p(max, count + 1)
+    else:
+        p(max, count)
+
+def q():
+    inp = int(input())
+    if inp == 1:
+        inp3 = int(input())
+        if inp3 == 1:
+            return q() + inp + inp3
+        else:
+            inp4 = int(input())
+            if inp4 == 1:
+                return q() + inp4 + inp + inp3
+            else:
+                return inp4 + inp + inp3
+    else:
+        inp2 = int(input())
+        if inp2 == 1:
+            return q() + inp + inp2
+        else:
+            return inp + inp2
+
+def r(n):
+    if n == 1:
+        return "1"
+    else:
+        sum = 0
+        for x in range(1, n + 1):
+            sum += x
+            j = str(x)
+            if sum > n:
+                break
+        print(r(n - 1) + j, end=" ")
+
