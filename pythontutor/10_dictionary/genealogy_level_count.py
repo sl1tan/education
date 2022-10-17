@@ -1,9 +1,9 @@
-def level(child, zero_parent):
+def level(graph, child, zero_parent):
+    lvl = 1
     parent = graph[child]
     if parent == zero_parent:
-        return 0
-    return level(parent, zero_parent) + 1
-
+        return lvl
+    return level(graph, parent, zero_parent) + 1
 
 n = int(input())
 graph = {}
