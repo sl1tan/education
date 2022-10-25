@@ -27,3 +27,12 @@ def pop_task():
             del entry_finder[task]
             return task
     raise KeyError('pop from an empty priority queue')
+
+
+def reverse_list(head, tail=None):
+    while head:
+        # head.next  = tail
+        # tail  = head
+        # head  = head.next
+	    head.next, tail, head = tail, head, head.next
+	# return tail
