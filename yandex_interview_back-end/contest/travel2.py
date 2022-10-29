@@ -1,7 +1,9 @@
 import collections
 
+
 def calculate_distance(city1, city2):
     return abs(city1[0] - city2[0]) + abs(city1[1] - city2[1])
+
 
 def all_possible(point):
     all = set()
@@ -13,19 +15,20 @@ def all_possible(point):
 
 def bfs(graph, start, end):
     level = [-1] * (len(graph) + 1)
-    level[start] = 0 
+    level[start] = 0
     visited, queue = set(), collections.deque([start])
     visited.add(start)
-    while queue: 
+    while queue:
         vertex = queue.popleft()
-        for neighbour in graph[vertex]: 
-            if neighbour not in visited: 
+        for neighbour in graph[vertex]:
+            if neighbour not in visited:
                 visited.add(neighbour)
                 level[neighbour] = level[vertex] + 1
                 if neighbour == end:
                     return level[neighbour]
                 queue.append(neighbour)
     return -1
+
 
 n = int(input())
 cities = {}

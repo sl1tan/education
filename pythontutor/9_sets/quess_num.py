@@ -1,6 +1,6 @@
 def question(all):
     good = set()
-    while(1):
+    while (1):
         inp2 = input()
         if inp2 == "HELP":
             print(*all)
@@ -12,6 +12,7 @@ def question(all):
             all.intersection_update(inp)
         elif answer == "NO":
             all.difference_update(inp)
+
 
 n_max = int(input())
 nums = set()

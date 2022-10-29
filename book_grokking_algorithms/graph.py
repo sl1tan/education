@@ -14,10 +14,13 @@ graph["JOHNY"] = []
 search = deque()
 search += graph["I"]
 searched = []
+
+
 def person_is_seller(person):
     return person[-1] == "M"
 
-while(search):
+
+while (search):
     person = search.popleft()
     if person_is_seller(person):
         print("{} is seller!".format(person))

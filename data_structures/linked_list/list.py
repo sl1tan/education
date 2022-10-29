@@ -2,18 +2,20 @@ class Node:
     def __init__(self, data):
         self.data = data
         self.next = None
+
     def append(self, value):
         end = Node(value)
         head = self
-        while(head.next):
+        while (head.next):
             head = head.next
         head.next = end
+
     def print_node(self):
         head = self
-        print(head.data, end = " ")
-        while(head.next):
+        print(head.data, end=" ")
+        while (head.next):
             head = head.next
-            print(head.data, end = " ")
+            print(head.data, end=" ")
         print()
 
 

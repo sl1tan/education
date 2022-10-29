@@ -4,15 +4,15 @@ for i in range(n):
     a.append([str(j) for j in input()])
 print("-------------------------------------------------------")
 
+
 def mirror(seq):
     output = list(seq[::-1])
     output.extend(seq[1:])
     return output
 
+
 b = a[::-1]
 c = b[1:]
-
-
 
 
 for i in range(0, len(b)):

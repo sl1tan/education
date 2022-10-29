@@ -5,4 +5,5 @@ def f(arr, k, s):
             arr[i] = f(arr[i], k - 1, s + str(i))
     return arr
 
+
 print(f([], int(input()), ""))

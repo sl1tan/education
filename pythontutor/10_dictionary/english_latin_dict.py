@@ -18,5 +18,4 @@ for key in english:
 print(len(latin))
 for key in sorted(latin):
     print(key, end=" - ")
-    print(*latin[key], sep = ", ")
-
+    print(*latin[key], sep=", ")

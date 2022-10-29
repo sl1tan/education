@@ -1,6 +1,7 @@
 def calculate_distance(city1, city2):
     return abs(city1[0] - city2[0]) + abs(city1[1] - city2[1])
 
+
 def all_possible(point):
     all = set()
     for city in cities:
@@ -25,6 +26,7 @@ def find_path(start, end, count=1):
                 return count + 1
         for point in from_start:
             return find_path(point, end, count + 1)
+
 
 n = int(input())
 cities = {}

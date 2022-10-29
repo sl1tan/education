@@ -1,8 +1,9 @@
 def output(arr):
     for row in arr:
         for elem in row:
-            print("%4d"%(elem), end="")
+            print("%4d" % (elem), end="")
         print()
+
 
 def turn(arr, n, m):
     new_arr = [[0] * n for x in range(m)]

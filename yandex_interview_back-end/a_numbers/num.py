@@ -1,11 +1,10 @@
 import math
 
 alphabet = []
-for i in range(97,123):
+for i in range(97, 123):
     alphabet.append(chr(i))
     if i == 122:
         alphabet.append(" ")
-
 
 
 count = int(input())

@@ -7,12 +7,14 @@ def find_small(arr):
             index = i
     return index
 
+
 def sort(arr):
     new_arr = []
     for x in range(len(arr)):
         index = find_small(arr)
         new_arr.append(arr.pop(index))
     return new_arr
+
 
 A = [3, 1, 5, 7, 8, 8, 100, 99]
 print(sort(A))

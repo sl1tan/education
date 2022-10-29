@@ -6,7 +6,7 @@ stations["kfive"] = set(["ca", "az"])
 
 needed = set(["wa", "mt", "id", "nv", "ut", "or", "ca", "az"])
 final_stations = set()
-while(needed):
+while (needed):
     best_station = None
     states_covered = set()
     for station, station_states in stations.items():

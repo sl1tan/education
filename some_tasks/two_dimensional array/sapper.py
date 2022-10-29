@@ -4,9 +4,11 @@ def output(arr):
             print("{:2}".format(arr[i][j]), end="")
         print()
 
+
 def make_arr(n, m):
     arr = [["0"] * m for i in range(n)]
     return arr
+
 
 def sapper(arr):
     for x in range(1, len(arr) - 1):
@@ -31,6 +33,7 @@ def sapper(arr):
                     count += 1
                 arr[x][y] = str(count)
     return arr
+
 
 n, m, mines = [int(i) for i in input().split()]
 arr = make_arr(n + 2, m + 2)

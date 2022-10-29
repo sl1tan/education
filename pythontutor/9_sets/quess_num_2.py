@@ -12,5 +12,5 @@ while True:
     else:
         print('NO')
         possible_nums &= all_nums - guess
-        
+
 print(' '.join([str(x) for x in sorted(possible_nums)]))

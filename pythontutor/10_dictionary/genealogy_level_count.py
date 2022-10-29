@@ -5,6 +5,7 @@ def level(graph, child, zero_parent):
         return lvl
     return level(graph, parent, zero_parent) + 1
 
+
 n = int(input())
 graph = {}
 for x in range(n - 1):

@@ -5,6 +5,7 @@ def f(arr, k):
             arr[i] = f(arr[i], k - 1)
     return arr
 
+
 k = int(input())
 
 print(f([], k))

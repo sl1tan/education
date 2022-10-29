@@ -7,13 +7,13 @@ class Solution:
     def middleNode(self, head: Optional[ListNode]) -> Optional[ListNode]:
         len = 0
         last = head
-        while(1):
+        while (1):
             if last.next == None:
                 len += 1
                 break
             last = last.next
             len += 1
-            
+
         count = 0
         middle = len // 2
         last = head
@@ -25,5 +25,3 @@ class Solution:
             if count == middle:
                 break
         return last
-        
-        

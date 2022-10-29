@@ -10,11 +10,11 @@ def find_lowest_node(costs):
 
 
 graph = {}
-graph["book"] = {"record" : 5, "poster" : 0}
-graph["record"] = {"guitar" : 15, "drum" : 20}
-graph["poster"] = {"guitar" : 30, "drum" : 35}
-graph["guitar"] = {"piano" : 20}
-graph["drum"] = {"piano" : 10}
+graph["book"] = {"record": 5, "poster": 0}
+graph["record"] = {"guitar": 15, "drum": 20}
+graph["poster"] = {"guitar": 30, "drum": 35}
+graph["guitar"] = {"piano": 20}
+graph["drum"] = {"piano": 10}
 graph["piano"] = {}
 
 costs = {}

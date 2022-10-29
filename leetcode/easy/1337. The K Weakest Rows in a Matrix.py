@@ -11,7 +11,7 @@ class Solution:
             id += 1
         result = []
         for x in range(k):
-            index = min(weight, key = weight.get)
+            index = min(weight, key=weight.get)
             result.append(index)
             weight.pop(index)
         return result

@@ -2,12 +2,13 @@ class Key():
     def __init__(self, gun: str, key: str):
         self.gun = gun
         self.key = key
-    
+
     def change(self, new_key: str):
         self.key = new_key
 
+
 class Settings():
-    def __init__(self, main_gun = "ak-47", alt_gun = "glock", melee_gun = "knife"):
+    def __init__(self, main_gun="ak-47", alt_gun="glock", melee_gun="knife"):
         self.main = Key(main_gun, 1)
         self.alt = Key(alt_gun, 2)
         self.melee = Key(melee_gun, 3)
@@ -21,7 +22,7 @@ class Settings():
         print(self.main.gun, self.main.key)
         print(self.alt.gun, self.alt.key)
         print(self.melee.gun, self.melee.key)
-    
+
 
 my_set = Settings()
 

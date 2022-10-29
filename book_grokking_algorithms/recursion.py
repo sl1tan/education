@@ -14,6 +14,7 @@ def sum_in(arr):
             summ += sum_in(i)
     return summ
 
+
 def fibonacci(num):
     if num == 0:
         return 0
@@ -22,18 +23,19 @@ def fibonacci(num):
     else:
         return fibonacci(num - 1) + fibonacci(num - 2)
 
+
 def power(x, pow):
     if pow == 1:
         return x
     else:
         return x * power(x, pow - 1)
 
+
 def binary(x):
     if x // 2 == 0:
         return str(x % 2)
     else:
         return binary(x//2) + str(x % 2)
-
 
 
 arr = [0, -2, -3, 111]

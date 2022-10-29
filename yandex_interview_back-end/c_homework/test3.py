@@ -6,6 +6,7 @@ def isPrime(n):
         d += 2
     return d * d > n
 
+
 def primeDiv(a):
     for i in range(a, 0, -1):
         if a % i == 0:
@@ -13,24 +14,27 @@ def primeDiv(a):
                 return i
     return 1
 
-def gcd(a, b): 
-    if b == 0: 
+
+def gcd(a, b):
+    if b == 0:
         return a
     else:
         return gcd(b, a % b)
 
+
 def simpleDividers(n):
-   answer = []
-   d = 2
-   while d * d <= n:
-       if n % d == 0:
-           answer.append(d)
-           n //= d
-       else:
-           d += 1
-   if n > 1:
-       answer.append(n)
-   return answer
+    answer = []
+    d = 2
+    while d * d <= n:
+        if n % d == 0:
+            answer.append(d)
+            n //= d
+        else:
+            d += 1
+    if n > 1:
+        answer.append(n)
+    return answer
+
 
 count = int(input())
 nums = []

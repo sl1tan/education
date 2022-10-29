@@ -17,6 +17,6 @@ for x in range(int(input())):
     buff.clear()
 
 print(len(all_know))
-print(*sorted(all_know), sep = "\n")
+print(*sorted(all_know), sep="\n")
 print(len(max_set))
-print(*sorted(max_set), sep = "\n")
+print(*sorted(max_set), sep="\n")

@@ -7,6 +7,7 @@ def level(graph, child, zero_parent):
         return lvl
     return level(graph, parent, zero_parent) + 1
 
+
 def check(parent, child):
     if graph[child] == parent:
         return 1

@@ -5,7 +5,7 @@ def count_days(n, start, sep):
             continue
         days.add(x)
     return days
-        
+
 
 n, part = [int(i) for i in input().split()]
 days = set()

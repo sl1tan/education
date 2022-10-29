@@ -1,6 +1,6 @@
 def evclid(x, y):
     maxi = max(x, y)
-    mini = min(x, y)  
+    mini = min(x, y)
     if maxi % mini == 0:
         return mini
     else:
