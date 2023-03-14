@@ -13,7 +13,7 @@ class Settings():
         self.alt = Key(alt_gun, 2)
         self.melee = Key(melee_gun, 3)
 
-    def change_settings(self, *,  new_main: str = "1", new_alt: str = "2", new_melee: str = "3"):
+    def change_settings(self, *, new_main: str = "1", new_alt: str = "2", new_melee: str = "3"):
         self.main.change(new_main)
         self.alt.change(new_alt)
         self.melee.change(new_melee)
