@@ -1,4 +1,6 @@
-class Nikola:
+class Nikola(object):
+    __slots__ = ['__name', '__age']
+
     def __init__(self, name, age):
         self.__name = None
         self.__age = age
@@ -19,5 +21,6 @@ class Nikola:
         return f'Name: {self.__name}\nAge: {self.__age}'
 
 n = Nikola('oleg', 20)
-# n.name = 'John'
+# n.www = '231'
+n.name = 'John'
 print(n)
