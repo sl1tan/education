@@ -1,7 +1,8 @@
 class Nikola:
     def __init__(self, name, age):
-        self.__name = name
+        self.__name = None
         self.__age = age
+        self.name = name
 
     @property
     def name(self):
@@ -18,4 +19,5 @@ class Nikola:
         return f'Name: {self.__name}\nAge: {self.__age}'
 
 n = Nikola('oleg', 20)
+# n.name = 'John'
 print(n)
